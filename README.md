@@ -1,7 +1,9 @@
 # Urban vs. Rural Population Analysis: Impact on Life Expectancy
 
 ## Description
-This project investigates the correlation between urbanization and life expectancy across diverse countries and forms part of a broader analysis of global health data aimed at pinpointing regions most in need of support from organizations like the World Health Organization (WHO). The goal of the project is to deepen the understanding of global health disparities and uncover insights for evidence-based decision-making in healthcare planning and resource allocation. Through thorough analysis, regions requiring aid are pinpointed, while countries with outstanding health outcomes are highlighted, serving as benchmarks for global health advancement.
+This project investigates the correlation between urbanization and life expectancy across diverse countries and forms part of a broader analysis of global health data aimed at pinpointing regions most in need of support from organizations like the World Health Organization (WHO). 
+
+The goal of the project is to deepen the understanding of global health disparities and uncover insights for evidence-based decision-making in healthcare planning and resource allocation. Through thorough analysis, regions requiring aid are identified, while countries with outstanding health outcomes are highlighted, serving as benchmarks for global health advancement.
 
 ## Python Libraries Used
 - Pandas
@@ -33,7 +35,7 @@ Script allows to perform the following steps of the analysis:
 - Perform statistical test to test the hypothesis. 
 - Plot Life Expectancy and Urban Population ratio on a map.
 
-## Data Limitationsand Assumptions
+## Data Limitations and Assumptions
 - Years: 2015 to 2019.
 - Countries that did not have Life Expectancy and Immunization Rates for all analyzed years were excluded from the analysis:
 Curacao,
@@ -44,20 +46,19 @@ Czech Republic,
 Turkey.
 - Life Expectancy for the entire population was calculated as weighted average between Male Life Expectancy and Female Life Expectancy. 
 - 95 countries (63.33%) did not have complete ‘Year’ information the data was averaged out by years.
-- Data frame that contains information by country with averaged information across the analyzed years has 246 countries.
+- Dataframe containing country-specific averaged information across the analyzed years comprises data for 246 countries.
 
 ### Assumptions
 1. Data is normally distributed
 2. Data is independent
-3. Data is homogenous (The standard deviations are roughly equal)
+3. Data is homogenous (standard deviations are roughly equal)
 
 ## Analysis Results
 
 During the analysis, statistical tests such as linear regression, correlation analysis, and independent sample t-tests were employed to assess statistical significance:
 - LinregressResult(slope=0.20960452658895146, intercept=60.13577971371717, rvalue=0.6177675233644961, pvalue=2.7918422048609635e-27, stderr=0.017080576290189883, intercept_stderr=1.0555839781164265).
 - PearsonRResult(statistic=0.6177675233644959, pvalue=2.79184220486113e-27).
-- Ttest_indResult(statistic=-10.782843029791302, pvalue=8.933679816645654e-22)
-There is statistical evidence that H0 can be rejected with the confidence level of 95%, meaning that Life expectancy for countries where Urban population is lower than 55% is not as high as for countries with Urban population higher or equal to 55%.
+- Ttest_indResult(statistic=-10.782843029791302, pvalue=8.933679816645654e-22).
 
 ### Findings Visualization
 
@@ -87,7 +88,7 @@ The analysis results were visualized using the following types of graphs:
 
 
 ## References
-https://www.kaggle.com/datasets/kiranshahi/life-expectancy-dataset?datasetId=1980580&sortBy=dateRun&tab=profile 
+https://www.kaggle.com/datasets/kiranshahi/life-expectancy-dataset?datasetId=1980580&sortBy=dateRun&tab=profile
 https://data.worldbank.org/indicator/SP.POP.TOTL.FE.ZS
 https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset
 https://www.kaggle.com/datasets/paultimothymooney/latitude-and-longitude-for-every-country-and-state
