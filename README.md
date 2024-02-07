@@ -10,7 +10,7 @@ This project investigates the correlation between urbanization and life expectan
 - NumPy
 - Hvplot
 
-## File Structure
+## Folder Structure
 - 'life_expectancy.ipynb': Jupyter Notebook with python script that cleans the data, uncovers trends and visualizes the findings.
 
 ### Data
@@ -53,20 +53,20 @@ Throughout the anaylsis linear regression analysis, correlation analysis, indepe
 - PearsonRResult(statistic=0.6177675233644959, pvalue=2.79184220486113e-27).
 - Ttest_indResult(statistic=-10.782843029791302, pvalue=8.933679816645654e-22)
 
-![Getting Started](Images/overview_slide.png)
+## Findings visualization
 
 To visualize the results the following graph types were created:
- - scatter plot to show relationship between Life Expectancy and Urban Population Ratio.
 
- ![Getting Started](Images/countries_list.png)
+- scatter plot to show relationship between Life Expectancy and Urban Population Ratio.
+- regression line.
 
- - regression line.
+![Getting Started](Images/countries_list.png)
 
- - box plots.
+- box plots.
 
 ![Getting Started](Images/life_span_comparison.png)
 
- - map visualization.
+- map visualization.
 
 ![Getting Started](Images/map.png)
 
@@ -76,6 +76,8 @@ To visualize the results the following graph types were created:
 - Correlation between Life Expectancy and size of Urban Population is moderate - 0.62.
 - Countries with lower % of the urban population may require more support in healthcare.
 - Develop infructructure in countries with lower urban population % may be an option to increase assessibility to healthcare and consequently increase Life Expectancy.
+
+![Getting Started](Images/overview_slide.png)
 
 
 ## References
