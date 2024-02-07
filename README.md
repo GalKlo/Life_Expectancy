@@ -21,7 +21,7 @@ Data sets were obtained from Kaggle and World Health Organization (WHO).
     - 'Medical_doctors.csv': CSV file with information about number of medical doctors by country by year. 
     - 'world_latitude_longtitude.csv': CSV file with countries geographical information for map visualization.
 
-## Data processing steps
+## Data Processing Steps
 Script allows to perform the following steps of the analysis:
 
 - Clean and prepare the data.
@@ -33,7 +33,7 @@ Script allows to perform the following steps of the analysis:
 - Perform statistical test to test the hypothesis. 
 - Plot Life Expectancy and Urban Population ratio on a map.
 
-## Data limitations
+## Data Limitationsand Assumptions
 - Years: 2015 to 2019.
 - Countries that did not have Life Expectancy and Immunization Rates for all analyzed years were excluded from the analysis:
 Curacao,
@@ -46,6 +46,11 @@ Turkey.
 - 95 countries (63.33%) did not have complete ‘Year’ information the data was averaged out by years.
 - Data frame that contains information by country with averaged information across the analyzed years has 246 countries.
 
+### Assumptions
+1. Data is normally distributed
+2. Data is independent
+3. Data is homogenous (The standard deviations are roughly equal)
+
 ## Analysis Results
 
 Throughout the anaylsis linear regression analysis, correlation analysis, independent sample t-test were used to check statistical significance:
@@ -53,7 +58,7 @@ Throughout the anaylsis linear regression analysis, correlation analysis, indepe
 - PearsonRResult(statistic=0.6177675233644959, pvalue=2.79184220486113e-27).
 - Ttest_indResult(statistic=-10.782843029791302, pvalue=8.933679816645654e-22)
 
-## Findings visualization
+## Findings Visualization
 
 To visualize the results the following graph types were created:
 
