@@ -53,14 +53,15 @@ Turkey.
 
 ## Analysis Results
 
-Throughout the anaylsis linear regression analysis, correlation analysis, independent sample t-test were used to check statistical significance:
+During the analysis, statistical tests such as linear regression, correlation analysis, and independent sample t-tests were employed to assess statistical significance:
 - LinregressResult(slope=0.20960452658895146, intercept=60.13577971371717, rvalue=0.6177675233644961, pvalue=2.7918422048609635e-27, stderr=0.017080576290189883, intercept_stderr=1.0555839781164265).
 - PearsonRResult(statistic=0.6177675233644959, pvalue=2.79184220486113e-27).
 - Ttest_indResult(statistic=-10.782843029791302, pvalue=8.933679816645654e-22)
+There is statistical evidence that H0 can be rejected with the confidence level of 95%, meaning that Life expectancy for countries where Urban population is lower than 55% is not as high as for countries with Urban population higher or equal to 55%.
 
-## Findings Visualization
+### Findings Visualization
 
-To visualize the results the following graph types were created:
+The analysis results were visualized using the following types of graphs:
 
 - scatter plot to show relationship between Life Expectancy and Urban Population Ratio.
 - regression line.
